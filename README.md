@@ -43,3 +43,16 @@ O banco de dados deve possuir a seguinte tabela
 
 ### Operators
 Os operadores utilizados são apenas dois **PythonOperators** com as **funções get_data_api** e **put_data_postgres**
+
+## Configurações do ambiente
+Para editar o arquivo e rodar no ambiente virtual, você precisará do **Anaconda** instalado. Depois, basta rodar (dentro da pasta do projeto)
+```bash
+conda env create --prefix ./env -f environment.yml
+```
+
+Após isso basta ativar o ambiente via o seguinte comando (dentro da pasta do projeto)
+```
+conda activate ./env
+```
+
+Após isso basta editar o arquivo. Você também pode editar sem precisar instalar o ambiente, já que o DAG vai rodar dentro do airflow. Isso é só por questão de Sintaxe que as IDEs vão necessitar.
